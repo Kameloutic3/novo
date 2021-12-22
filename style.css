@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-weight: inherit;
+    font-family: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+:root {
+    --CalBackground: #17062a;
+    --CalBotao: #331b4d;
+    --CalBotaoIgual: #00decf;
+    --CalBotaoReset: #56077c;
+    --Borde1: #bf16f5;
+    --Borde2: #861b9f;
+    --Tela: #481b79;
+    --Borde3: #6ef7ef;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    margin-top: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: var(--CalBackground);
+    color: white;
+}
+.calcul-name {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.tela {
+    margin: auto;
+    width: 260px;
+    height: 90px;
+    background-color: var(--Tela);
+}
+
+.auxiliar {
+    margin-top: 15px;
+}
+
+.area-button {
+    padding: 5px;
+    margin: auto;
+    width: 260px;
+    height: 315px;
+    background-color: var(--Tela);
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-bottom: 4px solid var(--Borde2);
+    background-color: var(--CalBotao);
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.unico {
+    flex: 1;
+}
+
+.reset {
+    background-color: var(--CalBotaoReset);
+    border-bottom: 4px solid var(--Borde1);
+    text-transform: uppercase;
+}
+
+.igual {
+    background-color: var(--CalBotaoIgual);
+    border-bottom: 4px solid var(--Borde3);
+    color: #000000;
+}
+
+.del {
+    border-bottom: 4px solid var(--Borde1);
+    background-color: var(--CalBotaoReset);
+    font-size: 18px;
+}
+
+@media (min-width: 1000px){
+    .calculadora {
+        width: 500px;
+        height: 600px;
+    }
+   .tela {
+        width: 430px;
+        height: 90px;
+   }
+   .area-button {
+        width: 430px;
+        height: 396px;
+   }
+   .button {
+        margin: 10px;
+        height: 57px;
+        width: 75px;
+   }
+   .calcul-name {
+        margin: 16px;
+        margin-left: 35px;
+        font-size: 35px;
+   }
+}
